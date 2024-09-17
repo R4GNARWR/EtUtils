@@ -1,0 +1,128 @@
+body {
+    font-family: 'Inter';
+    font-size: rems(16px);
+}
+
+main {
+    padding: 50px 0;
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+
+    // .content-box__label
+    &__label {
+        margin-bottom: 40px;
+        font-size: rems(24px);
+        line-height: 1.5em;
+        color: $black;
+        font-weight: 600;
+    }
+
+    // .content-box__text
+    &__text {
+        margin-bottom: 24px;
+        font-size: rems(16px);
+        line-height: 1.75em;
+        color: $black;
+        font-weight: 500;
+
+        // .content-box__text ul
+        ul {
+            padding-left: 1.5em;
+            margin: 2em 0;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1em;
+        }
+
+        // .content-box__text table
+        table {
+            border: 2px solid $background-light;
+
+        }
+    }
+
+    // .content-box__sublabel
+    &__sublabel {
+        margin-bottom: 20px;
+        font-size: rems(18px);
+        line-height: 1.5em;
+        color: $black;
+        font-weight: 600;
+    }
+
+    // .content-box__body
+    &__body {
+        margin-bottom: 20px;
+        padding: 32px 40px;
+        border-radius: 10px;
+        background-color: $background-light;
+        color: $gray;
+    }
+
+    &>*:last-child {
+        margin-bottom: 0;
+    }
+}
+
+code {
+    white-space: nowrap;
+    font-size: 1em;
+
+    &.token {
+        padding: 2px 4px;
+        border-radius: 4px;
+        padding: 3px 6px;
+        background-color: rgba(101, 117, 133, 0.16);
+    }
+
+
+    &.string,
+    &.operator,
+    &.boolean {
+        color: rgb(255, 203, 107);
+    }
+
+    &.punctuation {
+        color: rgb(137, 221, 255);
+    }
+
+    &.class,
+    &.parameter,
+    &.variable,
+    &.tag {
+        color: rgb(243, 243, 243);
+    }
+
+    &.value,
+    &.keyword {
+        color: rgb(194, 231, 140);
+    }
+
+    &.property,
+    &.function {
+        color: rgb(240, 113, 120);
+    }
+
+}
