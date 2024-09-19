@@ -9,6 +9,9 @@
                 <li>
                     <RouterLink to="/directives">Директивы</RouterLink>
                 </li>
+                <li>
+                    <RouterLink to="/methods">Методы</RouterLink>
+                </li>
             </ul>
         </aside>
         <main>
