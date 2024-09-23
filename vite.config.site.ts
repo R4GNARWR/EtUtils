@@ -13,5 +13,5 @@ export default defineConfig({
   build: {
     outDir: './site',
   },
-  base: process.env.NODE_ENV === "production" ? "/EtUtils/" : "/"
+  base: "/EtUtils/"
 });
