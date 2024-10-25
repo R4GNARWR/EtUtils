@@ -1,18 +1,22 @@
 {
-  "name": "et-utils",
-  "private": true,
+  "name": "@r4gnar/et-utils",
+  "private": false,
   "version": "0.0.1",
   "type": "module",
+  "homepage": "https://github.com/R4GNARWR/EtUtils",
+  "author": "R4GNAR",
   "scripts": {
     "dev": "vite --config vite.config.site.ts",
     "build": "vue-tsc -b && vite build --config vite.config.lib.ts",
     "build:site": "vite build --config vite.config.site.ts",
     "preview": "vite preview"
   },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/et-utils.es.js",
   "dependencies": {
-    "maska": "^3.0.2",
-    "vue": "^3.4.37",
-    "vue-router": "^4.4.5"
+    "maska": "^3.0.2"
   },
   "devDependencies": {
     "@types/node": "^22.5.5",
@@ -21,6 +25,8 @@
     "sass-loader": "^16.0.1",
     "typescript": "^5.5.3",
     "vite": "^5.4.1",
+    "vue": "^3.5.12",
+    "vue-router": "^4.4.5",
     "vue-tsc": "^2.0.29"
   }
 }
